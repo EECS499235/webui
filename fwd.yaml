@@ -1,0 +1,5 @@
+LOGIN_URL: "https://forwardnet.eecs.umich.edu/login"
+TARGET_PAGE_URL: "https://forwardnet.eecs.umich.edu/?/settings/org-prefs"
+FILE1_PATH: "/etc/letsencrypt/live/forwardnet.eecs.umich.edu/privkey.pem"
+FILE2_PATH: "/etc/letsencrypt/live/forwardnet.eecs.umich.edu/fullchain.pem"
+
