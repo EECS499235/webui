@@ -7,5 +7,7 @@ Python script to automate TLS certificate refresh on Forward Network App.
 
 ##  SETUP ENVIRONMENT VARIABLES
 
+```
 export FWD_USER = "admin" 
 export FWD_PASS = "forward" # change!
+```
