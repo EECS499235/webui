@@ -52,6 +52,8 @@ def checktls_main (cfg : DictConfig) -> None:
         print(f"  Common Name (CN): {subject.get('commonName', 'N/A')}")
         print(f"  Organization (O): {subject.get('organizationName', 'N/A')}")
         print(f"  Issuer: {dict(x[0] for x in certificate_info['issuer']).get('commonName', 'N/A')}")
+        print(f"  NotBefore: {certificate_info['notBefore']}")
+        print(f"  NotAfter: {certificate_info['notAfter']}")
 
 if __name__ == "__main__":
     checktls_main()
