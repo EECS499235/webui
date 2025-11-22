@@ -12,7 +12,6 @@ from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
-
 import time
 import os
 
@@ -51,19 +50,19 @@ XPATH_UPLOAD_CONFIRM = "//*[@id='layers']/div[1]/div/div/button"
 # ---------------------------------------------------
 # Helper functions
 # ---------------------------------------------------
-def wait_for(driver, timeout=20):
+def wait_for(driver, timeout=40):
     return WebDriverWait(driver, timeout)
 
-def wait_and_find(driver, by, value, timeout=20):
+def wait_and_find(driver, by, value, timeout=40):
     return wait_for(driver, timeout).until(EC.presence_of_element_located((by, value)))
 
-def wait_and_click(driver, by, value, timeout=20):
+def wait_and_click(driver, by, value, timeout=40):
     el = wait_for(driver, timeout).until(EC.element_to_be_clickable((by, value)))
     el.click()
     return el
 
 
-@hydra.main(version_base=None, config_path=".", config_name="fwd")
+@hydra.main(version_base=None, config_path=".", config_name="fwd_old")
 def webui_main (cfg : DictConfig) -> None:
     print(OmegaConf.to_yaml(cfg))
     # ---------------------------------------------------
