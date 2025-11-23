@@ -45,7 +45,9 @@ XPATH_DIALOG = "//*[@id='layers']//*[@role='dialog']"
 XPATH_UPLOAD_BUTTON = "//*[@id='layers']/div/div/div/div[2]/form/div[2]/div/span/button"
 
 XPATH_DIALOG_LAYER3 = "//*[@id='layers']//*[@role='dialog']"
-XPATH_UPLOAD_CONFIRM = "//*[@id='layers']/div[1]/div/div/button"
+XPATH_UPLOAD_CONFIRM = "//*[@id='layers']/div[1]/div/div/div[2]/form/div[2]/button[1]"
+
+# "//*[@id='layers']/div[1]/div/div/button"
 
 # ---------------------------------------------------
 # Helper functions
@@ -62,7 +64,7 @@ def wait_and_click(driver, by, value, timeout=40):
     return el
 
 
-@hydra.main(version_base=None, config_path=".", config_name="fwd_old")
+@hydra.main(version_base=None, config_path=".", config_name="fwd")
 def webui_main (cfg : DictConfig) -> None:
     print(OmegaConf.to_yaml(cfg))
     # ---------------------------------------------------
