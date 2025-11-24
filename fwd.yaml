@@ -6,5 +6,5 @@ TARGET_PAGE_URL: "https://forwardnet.eecs.umich.edu/?/settings/org-prefs"
 # FILE2_PATH: "/home/vyl/github/EECS499235/webui/fullchain.pem"
 
 # Mac OS
-FILE1_PATH: "/Users/vyl/github/EECS499235/webui/privkey.pem"
-FILE2_PATH: "/Users/vyl/github/EECS499235/webui/fullchain.pem"
+FILE1_PATH: "/Users/vyl/github/EECS499235/webui/certs/fwd.key"
+FILE2_PATH: "/Users/vyl/github/EECS499235/webui/certs/fwd.cert"
