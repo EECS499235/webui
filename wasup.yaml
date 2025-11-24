@@ -1,0 +1,11 @@
+LOGIN_URL: "https://webservices.itcs.umich.edu/index.php?screen=view&instance_id=36409"
+TARGET_PAGE_URL: "https://webservices.itcs.umich.edu/index.php?screen=view&instance_id=36409"
+
+# Ubuntu
+#KEY_PATH: "/home/vyl/github/EECS499235/webui/privkey1.pem"
+#CERT_PATH: "/home/vyl/github/EECS499235/webui/fullchain1.pem"
+
+# Default on Mac OS, for Ubuntu, we create a symbolic link /Users for /home
+KEY_PATH: "/Users/vyl/github/EECS499235/webui/certs/fwd.key"
+CSR_PATH: "/Users/vyl/github/EECS499235/webui/certs/fwd.csr"
+CERT_PATH: "/Users/vyl/github/EECS499235/webui/certs/fwd.cert"
