@@ -26,12 +26,12 @@ try:
     # We might want to complete the UM's MFA authentication using user/pass/methods below. 
     UM_USER = os.environ["UM_USER"]
     UM_PASS = os.environ["UM_PASS"]
-    UM_MFA  = os.environ["UM_MFA"] 
+    #UM_MFA  = os.environ["UM_MFA"] 
     # which MFA method used for this authentication. 
     # This could be changing over time and break the automation if we do not exhaust all possibilities)
 except KeyError:
     # Handle the case where the key is missing
-    print("Error: The UM_USER or UM_PASS, or UM_MFA environment variables are not set.")
+    print("Error: The UM_USER or UM_PASS environment variables are not set.")
     # You can also exit the program or raise a custom exception here if needed
     raise SystemExit(1)
 
